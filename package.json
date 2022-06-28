@@ -1,0 +1,27 @@
+{
+  "name": "@ilyeo/is-my-birthday-today",
+  "version": "0.0.1",
+  "description": "Package to determine if today is my birthday",
+  "files": ["dist"],
+  "main": "./dist/is-my-birthday-today.umd.js",
+  "module": "./dist/is-my-birthday-today.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/is-my-birthday-today.es.js",
+      "require": "./dist/is-my-birthday-today.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "@ilyeo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.7.4",
+    "vite": "^2.9.13",
+    "vitest": "^0.16.0"
+  }
+}
